@@ -1,0 +1,7 @@
+Programm starten:
+
+./tacoVenv/Scripts/activate
+
+./tacoVenv/Scripts/python.exe ESP_Tacho.pygame
+
+(weiss gar ned ob wenn man den zweiten Befehl so nutzt die erste Zeile überhaupt nötig ist)

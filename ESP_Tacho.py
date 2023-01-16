@@ -1,7 +1,6 @@
 # importing required library
 import pygame
 import numpy as np
-import time
 from threading import Thread
 import serial
 from serial.tools.list_ports_windows import comports
@@ -12,8 +11,6 @@ from time import perf_counter
 pygame.init()
 X = 600
 Y = 600
-ARROW_SIZE = 20
-ARROW_POS = (X/2 - ARROW_SIZE/2, 0)
 
 light_grey = (160, 160, 160)
 
@@ -28,6 +25,7 @@ elif(len(ports) == 0):
 else:
     # inquirer herre
     pass
+
 def generate_angles():
     print("Available ports:")
     serial_port = serial.Serial()
