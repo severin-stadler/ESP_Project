@@ -20,7 +20,8 @@ ports = [a for (a, b, c) in comports(include_links=None)]
 if(len(ports) == 1):
     port = ports[0]
 elif(len(ports) == 0):
-    print("no port was found")
+    print("no port was found. Press enter to exit")
+    input()
     sys.exit()
 else:
     # inquirer herre
